@@ -1,0 +1,12 @@
+
+
+Type main + ctrl + spacebar + Enter --> to write main method
+
+Type syso + ctrl + spacebar + Enter --> to write "System.out.println()"
+
+ctrl + s --> save a file
+
+Alt + shift + X, J --> Run as Java
+
+	
+	
