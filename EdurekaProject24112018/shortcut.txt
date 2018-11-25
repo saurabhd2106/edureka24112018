@@ -8,5 +8,9 @@ ctrl + s --> save a file
 
 Alt + shift + X, J --> Run as Java
 
+Shift + ctrl + F  --> To format the code
+
+
+
 	
 	
