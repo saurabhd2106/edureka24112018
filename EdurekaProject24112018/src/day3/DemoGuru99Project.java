@@ -12,7 +12,11 @@ public class DemoGuru99Project {
 		
 		guru.addCustomer();
 		
-
+		String customerId  = guru.getCustomerId();
+		
+		System.out.println("Customer Id : "+ customerId);
+		
+		guru.addAccount(customerId);
 	}
 
 }

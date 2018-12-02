@@ -26,6 +26,16 @@ public class DemoEmployee {
 		int salary = gaurav.calculateSalary1();
 		
 		System.out.println("Gaurav's salary : "+ salary);
+		
+		//--------------------------------------
+		
+		Employee supriyo = new Employee();
+		
+		supriyo.salary = -98673;
+		supriyo.bonus = -9877;
+		
+		System.out.println(supriyo.salary);
+		supriyo.calculateSalary();
 
 	}
 

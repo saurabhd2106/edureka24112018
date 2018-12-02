@@ -3,6 +3,7 @@ package day3;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class Guru99Project {
 
@@ -61,5 +62,29 @@ public class Guru99Project {
 	public void closeBrowser() {
 		driver.quit();
 	}
+	
+	public String getCustomerId(){
+		return driver.findElement(By.xpath("//table[@id='customer']/tbody/tr[4]/td[2]")).getText();
+	}
 
+	public void addAccount(String customerId){
+		
+		driver.findElement(By.linkText("New Account")).click();
+		
+		driver.findElement(By.name("cusid")).sendKeys(customerId);
+		
+		WebElement accountDropdown = driver.findElement(By.name("selaccount"));
+		
+		Select selectAccount = new Select(accountDropdown);
+		
+		selectAccount.selectByVisibleText("Current");
+		
+		System.out.println(selectAccount.isMultiple());
+		
+		System.out.println(selectAccount.getWrappedElement());
+		
+		driver.findElement(By.name("inideposit")).sendKeys("4983274");
+		
+		driver.findElement(By.name("button2")).click();
+	}
 }
