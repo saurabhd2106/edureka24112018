@@ -8,6 +8,9 @@ public class DemoCar {
 		
 		mac.start();
 		mac.stop();
+		mac.numberOfSeats = 78;
+		
+		mac.engineSize = 2000;
 		
 		System.out.println(mac.engineSize);
 		System.out.println("--------------------------------");
@@ -24,6 +27,7 @@ public class DemoCar {
 		
 		bmw.start();
 		bmw.stop();
+		
 		
 		System.out.println(bmw.engineSize);
 		
