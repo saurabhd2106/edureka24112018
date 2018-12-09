@@ -81,7 +81,7 @@ public class Guru99Project {
 		
 		System.out.println(selectAccount.isMultiple());
 		
-		System.out.println(selectAccount.getWrappedElement());
+		
 		
 		driver.findElement(By.name("inideposit")).sendKeys("4983274");
 		
