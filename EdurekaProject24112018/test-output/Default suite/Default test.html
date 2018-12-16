@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Dec 15 23:02:52 IST 2018</td>
+<td>Started on:</td><td>Sun Dec 16 23:07:24 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>39 seconds (39712 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (131 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,21 +75,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='day7.GuruProject.verifyTitleOfThePage()'><b>verifyTitleOfThePage</b><br>Test class: day7.GuruProject</td>
-<td><div><pre>java.lang.AssertionError: expected [Guru99 Bank Home Page1] but found [Guru99 Bank Home Page]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at org.testng.Assert.assertEquals(Assert.java:199)
-	at day7.GuruProject.verifyTitleOfThePage(GuruProject.java:33)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+<td title='day8.BasicTesting.testcase7()'><b>testcase7</b><br>Test class: day8.BasicTesting</td>
+<td><div><pre>org.testng.TestException: 
+Method BasicTesting.testcase7()[pri:0, instance:day8.BasicTesting@215be6bb] should have thrown an exception of type class java.lang.ArrayIndexOutOfBoundsException
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:89)
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1416)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:695)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
@@ -109,21 +100,12 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-</pre></div><a href='#' onClick='toggleBox("stack-trace259564670", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace259564670'><pre>java.lang.AssertionError: expected [Guru99 Bank Home Page1] but found [Guru99 Bank Home Page]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at org.testng.Assert.assertEquals(Assert.java:199)
-	at day7.GuruProject.verifyTitleOfThePage(GuruProject.java:33)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+</pre></div><a href='#' onClick='toggleBox("stack-trace540159270", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace540159270'><pre>org.testng.TestException: 
+Method BasicTesting.testcase7()[pri:0, instance:day8.BasicTesting@215be6bb] should have thrown an exception of type class java.lang.ArrayIndexOutOfBoundsException
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:89)
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1416)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:695)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
@@ -145,7 +127,35 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 </pre></div></td>
 <td>0</td>
-<td>day7.GuruProject@5f375618</td></tr>
+<td>day8.BasicTesting@215be6bb</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='day8.BasicTesting.testcase1()'><b>testcase1</b><br>Test class: day8.BasicTesting</td>
+<td></td>
+<td>0</td>
+<td>day8.BasicTesting@215be6bb</td></tr>
+<tr>
+<td title='day8.BasicTesting.testcase2()'><b>testcase2</b><br>Test class: day8.BasicTesting</td>
+<td></td>
+<td>0</td>
+<td>day8.BasicTesting@215be6bb</td></tr>
+<tr>
+<td title='day8.BasicTesting.testcase3()'><b>testcase3</b><br>Test class: day8.BasicTesting</td>
+<td></td>
+<td>0</td>
+<td>day8.BasicTesting@215be6bb</td></tr>
+<tr>
+<td title='day8.BasicTesting.testcase4()'><b>testcase4</b><br>Test class: day8.BasicTesting</td>
+<td></td>
+<td>0</td>
+<td>day8.BasicTesting@215be6bb</td></tr>
 </table><p>
 </body>
 </html>

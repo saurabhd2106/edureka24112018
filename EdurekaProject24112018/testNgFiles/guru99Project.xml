@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Guru99Project">
+  <test name="Basic Testing" parallel="methods">
+      <parameter name="browserType" value="edge"></parameter>
+      <parameter name="userId" value="mngr166046"></parameter>
+      <parameter name="password" value="ugudEpu"></parameter>
+    <classes>
+      <class name="day8.GuruProject"/>
+      <class name="day8.BasicTesting"/>
+    </classes>
+  </test> <!-- Basic Testing -->
+</suite> <!-- Guru99Project -->

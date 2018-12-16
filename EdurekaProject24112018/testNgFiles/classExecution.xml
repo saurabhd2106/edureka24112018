@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Guru 99 Test suite">
+  <test name="Class Execution test">
+   <classes>
+       <class name="day8.BasicTesting"></class>
+       <class name="day7.GuruProject"></class>
+   </classes>
+  </test> 
+</suite>

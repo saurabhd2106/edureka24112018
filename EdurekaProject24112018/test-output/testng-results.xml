@@ -1,36 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="1" total="2" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="39712" started-at="2018-12-15T17:32:52Z" finished-at="2018-12-15T17:33:32Z">
+  <suite name="Default suite" duration-ms="131" started-at="2018-12-16T17:37:24Z" finished-at="2018-12-16T17:37:25Z">
     <groups>
+      <group name="Sanity">
+        <method signature="BasicTesting.testcase2()[pri:2000, instance:day8.BasicTesting@215be6bb]" name="testcase2" class="day8.BasicTesting"/>
+        <method signature="BasicTesting.testcase3()[pri:3000, instance:day8.BasicTesting@215be6bb]" name="testcase3" class="day8.BasicTesting"/>
+      </group> <!-- Sanity -->
     </groups>
-    <test name="Default test" duration-ms="39712" started-at="2018-12-15T17:32:52Z" finished-at="2018-12-15T17:33:32Z">
-      <class name="day7.GuruProject">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:day7.GuruProject@5f375618]" name="invokeBrowser" is-config="true" duration-ms="38397" started-at="2018-12-15T23:02:52Z" finished-at="2018-12-15T23:03:30Z">
+    <test name="Default test" duration-ms="131" started-at="2018-12-16T17:37:24Z" finished-at="2018-12-16T17:37:25Z">
+      <class name="day8.BasicTesting">
+        <test-method status="PASS" signature="beforeAClass()[pri:0, instance:day8.BasicTesting@215be6bb]" name="beforeAClass" is-config="true" duration-ms="21" started-at="2018-12-16T23:07:24Z" finished-at="2018-12-16T23:07:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invokeBrowser -->
-        <test-method status="FAIL" signature="verifyTitleOfThePage()[pri:0, instance:day7.GuruProject@5f375618]" name="verifyTitleOfThePage" duration-ms="43" started-at="2018-12-15T23:03:30Z" finished-at="2018-12-15T23:03:31Z">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- beforeAClass -->
+        <test-method status="PASS" signature="testcase1()[pri:0, instance:day8.BasicTesting@215be6bb]" name="testcase1" duration-ms="8" started-at="2018-12-16T23:07:24Z" finished-at="2018-12-16T23:07:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase1 -->
+        <test-method status="PASS" signature="beforeATestcase()[pri:0, instance:day8.BasicTesting@215be6bb]" name="beforeATestcase" is-config="true" duration-ms="0" started-at="2018-12-16T23:07:24Z" finished-at="2018-12-16T23:07:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeATestcase -->
+        <test-method status="PASS" signature="afterATestcase()[pri:0, instance:day8.BasicTesting@215be6bb]" name="afterATestcase" is-config="true" duration-ms="1" started-at="2018-12-16T23:07:25Z" finished-at="2018-12-16T23:07:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterATestcase -->
+        <test-method status="PASS" signature="beforeATestcase()[pri:0, instance:day8.BasicTesting@215be6bb]" name="beforeATestcase" is-config="true" duration-ms="1" started-at="2018-12-16T23:07:25Z" finished-at="2018-12-16T23:07:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeATestcase -->
+        <test-method status="FAIL" signature="testcase7()[pri:0, instance:day8.BasicTesting@215be6bb]" name="testcase7" duration-ms="4" started-at="2018-12-16T23:07:25Z" finished-at="2018-12-16T23:07:25Z">
+          <exception class="org.testng.TestException">
             <message>
-              <![CDATA[expected [Guru99 Bank Home Page1] but found [Guru99 Bank Home Page]]]>
+              <![CDATA[
+Method BasicTesting.testcase7()[pri:0, instance:day8.BasicTesting@215be6bb] should have thrown an exception of type class java.lang.ArrayIndexOutOfBoundsException]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Guru99 Bank Home Page1] but found [Guru99 Bank Home Page]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at org.testng.Assert.assertEquals(Assert.java:199)
-	at day7.GuruProject.verifyTitleOfThePage(GuruProject.java:33)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+              <![CDATA[org.testng.TestException: 
+Method BasicTesting.testcase7()[pri:0, instance:day8.BasicTesting@215be6bb] should have thrown an exception of type class java.lang.ArrayIndexOutOfBoundsException
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:89)
+	at org.testng.internal.Invoker.handleInvocationResults(Invoker.java:1416)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:695)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
@@ -52,15 +64,55 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.testng.TestException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTitleOfThePage -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:day7.GuruProject@5f375618]" name="closeBrowser" is-config="true" duration-ms="1218" started-at="2018-12-15T23:03:31Z" finished-at="2018-12-15T23:03:32Z">
+        </test-method> <!-- testcase7 -->
+        <test-method status="PASS" signature="afterATestcase()[pri:0, instance:day8.BasicTesting@215be6bb]" name="afterATestcase" is-config="true" duration-ms="2" started-at="2018-12-16T23:07:25Z" finished-at="2018-12-16T23:07:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- day7.GuruProject -->
+        </test-method> <!-- afterATestcase -->
+        <test-method status="PASS" signature="beforeATestcase()[pri:0, instance:day8.BasicTesting@215be6bb]" name="beforeATestcase" is-config="true" duration-ms="0" started-at="2018-12-16T23:07:25Z" finished-at="2018-12-16T23:07:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeATestcase -->
+        <test-method status="PASS" signature="testcase4()[pri:1000, instance:day8.BasicTesting@215be6bb]" name="testcase4" duration-ms="11" started-at="2018-12-16T23:07:25Z" finished-at="2018-12-16T23:07:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase4 -->
+        <test-method status="PASS" signature="afterATestcase()[pri:0, instance:day8.BasicTesting@215be6bb]" name="afterATestcase" is-config="true" duration-ms="1" started-at="2018-12-16T23:07:25Z" finished-at="2018-12-16T23:07:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterATestcase -->
+        <test-method status="PASS" signature="beforeATestcase()[pri:0, instance:day8.BasicTesting@215be6bb]" name="beforeATestcase" is-config="true" duration-ms="2" started-at="2018-12-16T23:07:25Z" finished-at="2018-12-16T23:07:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeATestcase -->
+        <test-method status="PASS" signature="testcase2()[pri:2000, instance:day8.BasicTesting@215be6bb]" name="testcase2" duration-ms="3" started-at="2018-12-16T23:07:25Z" finished-at="2018-12-16T23:07:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase2 -->
+        <test-method status="PASS" signature="afterATestcase()[pri:0, instance:day8.BasicTesting@215be6bb]" name="afterATestcase" is-config="true" duration-ms="0" started-at="2018-12-16T23:07:25Z" finished-at="2018-12-16T23:07:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterATestcase -->
+        <test-method status="PASS" signature="beforeATestcase()[pri:0, instance:day8.BasicTesting@215be6bb]" name="beforeATestcase" is-config="true" duration-ms="1" started-at="2018-12-16T23:07:25Z" finished-at="2018-12-16T23:07:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeATestcase -->
+        <test-method status="PASS" signature="testcase3()[pri:3000, instance:day8.BasicTesting@215be6bb]" name="testcase3" duration-ms="4" started-at="2018-12-16T23:07:25Z" finished-at="2018-12-16T23:07:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase3 -->
+        <test-method status="PASS" signature="afterAClass()[pri:0, instance:day8.BasicTesting@215be6bb]" name="afterAClass" is-config="true" duration-ms="1" started-at="2018-12-16T23:07:25Z" finished-at="2018-12-16T23:07:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterAClass -->
+        <test-method status="PASS" signature="afterATestcase()[pri:0, instance:day8.BasicTesting@215be6bb]" name="afterATestcase" is-config="true" duration-ms="0" started-at="2018-12-16T23:07:25Z" finished-at="2018-12-16T23:07:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterATestcase -->
+      </class> <!-- day8.BasicTesting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

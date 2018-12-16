@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Guru99Project]">
+  <test name="Basic Testing(failed)" parallel="methods">
+    <parameter name="password" value="ugudEpu"/>
+    <parameter name="userId" value="mngr166046"/>
+    <parameter name="browserType" value="edge"/>
+    <classes>
+      <class name="day8.GuruProject">
+        <methods>
+          <include name="verifyTitleOfThePage"/>
+          <include name="closeBrowser"/>
+          <include name="invokeBrowser"/>
+        </methods>
+      </class> <!-- day8.GuruProject -->
+    </classes>
+  </test> <!-- Basic Testing(failed) -->
+</suite> <!-- Failed suite [Guru99Project] -->

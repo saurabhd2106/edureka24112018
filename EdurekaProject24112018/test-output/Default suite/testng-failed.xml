@@ -3,13 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="day7.GuruProject">
+      <class name="day8.BasicTesting">
         <methods>
-          <include name="verifyTitleOfThePage"/>
-          <include name="invokeBrowser"/>
-          <include name="closeBrowser"/>
+          <include name="afterAClass"/>
+          <include name="testcase7"/>
+          <include name="afterATestcase"/>
+          <include name="beforeAClass"/>
+          <include name="beforeATestcase"/>
         </methods>
-      </class> <!-- day7.GuruProject -->
+      </class> <!-- day8.BasicTesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
